@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đối số của hàm </title>
+
+
+    <script type="text/javascript">
+        let aNewVaribal = "is gobal.";
+        function doSomething(incomingBits) {
+            alert("Global varible within the funtion:" +aNewVaribal);
+            alert("Local varible within the funtion:" + incomingBits);
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        doSomething("is a local varible");
+        alert("Golbal varible within thu funtion :" + aNewVaribal);
+        alert("Local varible within the funtion:" + incomingBits);
+
+
+    </script>
+
+</body>
+</html>

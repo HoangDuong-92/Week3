@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo hàm nhập hai tham số</title>
+</head>
+<body>
+<button onclick="compare()">Bài 3</button>
+    <script>
+        function compare(number1, number2) {
+            number1 = parseInt(prompt("Nhập số thứ nhất"));
+            number2 = parseInt(prompt("Nhập số thứ 2"));
+            let total;
+            if (number1 > number2) {
+                alert("Số thứ nhất lớn hơn");
+            }
+            else {
+                total = number1 + number2;
+                alert("Tổng hai số là: " + total);
+            }
+        }
+    </script>
+</body>
+</html>

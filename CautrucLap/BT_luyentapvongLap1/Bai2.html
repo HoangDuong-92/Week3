@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin nhiệt độ</title>
+</head>
+<body>
+    <script>
+        let a;
+        do {
+            a = parseInt(prompt("nhập nhiệt độ "));
+            if (a > 100){
+                alert("Giảm nhiệt độ xuống");
+            }
+            if (a < 20){
+                alert("tăng nhiệt độ lên ");
+
+            }
+        }
+        while (a > 100 || a < 20);
+        document.write(a + " nhiệt dộ cân bằng");
+    </script>
+</body>
+</html>

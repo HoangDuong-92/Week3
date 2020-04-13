@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố cần tìm </title>
+</head>
+<body>
+    <script>
+        // Số nguyên tố là số lớn hơn 1 và chỉ chia hết cho 1 và chính nó.
+        let number = parseInt(prompt("Số nguyên tố cần tìm là:"));
+        let count = 0;
+        let n = 2;
+        let checker = true;
+        while (count < number) {
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    checker = false;
+                }
+            }
+            if (checker == true) {
+                document.write(n+ "</br>");
+                count++;
+            }
+            n++;
+            checker = true;// gán lại giá trị đúng cho vòng lặ trước.
+        }
+
+    </script>
+</body>
+</html>
